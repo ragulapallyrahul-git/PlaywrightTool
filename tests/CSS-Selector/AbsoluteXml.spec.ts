@@ -11,4 +11,5 @@ test("The testcase for Absolute Xpath",async({page})=>
     await page.waitForTimeout(3000);
 await page.locator("xpath=/html/body/form/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[1]/input").click();
 await page.waitForTimeout(7000);
+console.log("My code is running successfully");
 })
