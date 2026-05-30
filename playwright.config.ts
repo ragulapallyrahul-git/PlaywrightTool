@@ -76,3 +76,15 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
+module.exports = {
+    use :{
+      headless :  false,
+      viewport : null,
+      launchOptions:
+      {
+        args:['--start-maximized']
+      }
+
+    }
+  }
