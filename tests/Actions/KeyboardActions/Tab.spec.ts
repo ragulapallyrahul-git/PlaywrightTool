@@ -5,19 +5,15 @@ test("Test case on MouseHover -Mouse Action", async({page})=>
     await page.waitForTimeout(3000);
     const U = page.locator("//input[@type = 'text']");
     await U.fill("playwright");
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(2000);
+    await page.keyboard.press('Tab');
+    await page.waitForTimeout(2000);
     const P = page.locator("//input[@type = 'password']");
     await P.fill("playwright");
-    await page.waitForTimeout(1000);
-    const L = page.locator("//input[@type = 'Submit']");
-    await L.click();
-    await page.waitForTimeout(3000);
-
-    const H = page.locator("//li[@id='time']");
-    await H.hover();
-    await page.waitForTimeout(3000);
-    const B = page.locator("//li[@id='benefits']");
-    await B.hover();
+    await page.waitForTimeout(2000);
+    await page.keyboard.press('Tab'); // Tab Keyword
+    await page.waitForTimeout(2000);
+    await page.keyboard.press('Enter'); // Enter Keyword
     await page.waitForTimeout(3000);
     
 })
