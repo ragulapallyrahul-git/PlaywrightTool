@@ -1,5 +1,5 @@
 import{test,expect}from '@playwright/test';
-test("Test case on MouseHover -Mouse Action", async({page})=>
+test("Test case on Tab - KeybordActions", async({page})=>
 {
     await page.goto('http://127.0.0.1/orangehrm-2.5.0.2/login.php');
     await page.waitForTimeout(3000);

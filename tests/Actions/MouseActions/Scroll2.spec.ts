@@ -1,5 +1,5 @@
 import{test,expect}from '@playwright/test';
-test("Test case on Double click -Mouse Action", async({page})=>
+test("Test case on Scroll2 -Mouse Action", async({page})=>
 {
     await page.goto('https://www.amazon.in/');
     await page.waitForTimeout(6000);

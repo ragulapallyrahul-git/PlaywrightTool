@@ -1,5 +1,5 @@
 import{test,expect}from '@playwright/test';
-test("Test case on MouseHover -Mouse Action", async({page})=>
+test("Test case on Keyboard1-KeybordActions", async({page})=>
 {
     await page.goto('https://www.google.com/');
     await page.waitForTimeout(6000);
@@ -16,8 +16,7 @@ test("Test case on MouseHover -Mouse Action", async({page})=>
     await page.waitForTimeout(1000);
     await page.keyboard.press('Backspace');
     await page.waitForTimeout(3000);
-    await page.keyboard.press('Backspace');
-    await page.waitForTimeout(3000);
+    
     await page.keyboard.press('Control+A'); // CTRL+A-SelectAll
     await page.waitForTimeout(2000);
     await page.keyboard.press('Control+X'); // CTRL+X-Cut
