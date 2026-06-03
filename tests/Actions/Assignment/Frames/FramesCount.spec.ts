@@ -8,5 +8,8 @@ const Frames = page.locator("frame"); //just taking frames because the page full
 const FrameCount = await Frames.count();
 console.log("No of Frames :" + FrameCount);
 await page.waitForTimeout(3000);
+//or
+// const F = page.frames();
+// console.log(frames.length);
 
 })

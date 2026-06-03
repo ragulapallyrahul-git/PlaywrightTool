@@ -17,8 +17,6 @@ await page.waitForTimeout(3000);
   await Links.nth(1).click();
   await page.waitForTimeout(3000);
 
-//or
-// const F = page.frames();
-// console.log(frames.length);
+
 
 })
