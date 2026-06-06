@@ -6,8 +6,11 @@ test("Test case on Handling Windows1",async({browser})=>
  const PPage = await BC.newPage();
  await PPage.waitForTimeout(2000);
  await PPage.goto("http://127.0.0.1/orangehrm-2.5.0.2/login.php");
+ await PPage.waitForTimeout(2000);
  await PPage.locator("//input[@type = 'text']").fill("playwright");
+ await PPage.waitForTimeout(2000);
 await PPage.locator("//input[@type = 'password']").fill("playwright");
+await PPage.waitForTimeout(2000);
 await PPage.locator("//input[@type = 'Submit']").click();
 await PPage.waitForTimeout(3000);
 await PPage.locator("li#help").hover();
